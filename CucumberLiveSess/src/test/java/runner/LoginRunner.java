@@ -9,9 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = {"stepDef"}, //dimana step definition disimpan
         features = {"src/test/java/features"}, //dimana feature file disimpan
-        plugin = {"pretty", "html:reports/cucumber.html", "json:reports/cucumber.json"},
+        plugin = {"pretty", "html:reports/cucumber-report.html"},
         //menambahkan informasi mengenai step yg dieksekusi,
-        //"html:reports/cucumber.html", "json:reports/cucumber.json
         tags = "@login-valid-emailandpass"
         ,
         monochrome = true
